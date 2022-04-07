@@ -1,0 +1,18 @@
+<section id="clientes-detalle" class="padded">
+    <div class="container">
+        <h2>{{cliente === undefined ? '' :  cliente.nombre}}</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <p>Apellido: {{cliente === undefined ? '' : cliente.apellido}}  </p>
+                <p>Provincia: {{cliente === undefined ? '' : cliente.provincia}}</p>
+                <p>Enfermedad:{{cliente === undefined ? '' : cliente.enfermedad}} </p>
+                <img src="https://zisoftacademy.com/apiclases/img/clientes/{{cliente === undefined ? '' : cliente.foto}}" class="img-thumbnail" alt="...">
+            </div>
+            <div class="col-md-4">
+                
+            </div>
+
+        </div>
+    </div>
+
+</section>

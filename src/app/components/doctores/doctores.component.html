@@ -1,0 +1,25 @@
+<section id="tienda" class="padded">
+    <div class="container">
+        <h2 class="pb-4">Especialidad de Doctores</h2>
+        <div class="row">
+            <div class="col-md-3">
+                <ul class="list-group">
+                    <li class="list-group-item" 
+                        *ngFor="let filaEspecialidad of listaEspecialidad"
+                        (click)=seleccionar(filaEspecialidad)
+                        [class.active]="filaEspecialidad === especialidadElegida" >
+                        <h5>{{filaEspecialidad.nombre}}</h5>
+                        <small>{{filaEspecialidad.descripcion}}</small>
+                    </li>
+                </ul>    
+            </div>
+            <div class="col-md-9" *ngIf="especialidadElegida">
+                <h3>{{especialidadElegida.nombre}}</h3>
+                <p>{{especialidadElegida.descripcion}}</p>
+                <app-medicina [EspecialidadX]="especialidadElegida">
+                </app-medicina>
+            </div>
+        </div>    
+    </div>
+</section>   
+

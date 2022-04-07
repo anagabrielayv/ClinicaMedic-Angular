@@ -1,0 +1,18 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Imagen</th>
+            <th>Teléfono</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let filaMedicina of listaMedicina">
+            <td>{{filaMedicina.nombre}}</td>
+            <td>{{filaMedicina.apellido}}</td>
+            <td><img src="https://zisoftacademy.com/apiclases/img/{{filaMedicina.imagen}}" class="img-thumbnail" alt="..."></td>
+            <td>{{filaMedicina.telefono}}</td>
+        </tr>
+    </tbody>
+</table>

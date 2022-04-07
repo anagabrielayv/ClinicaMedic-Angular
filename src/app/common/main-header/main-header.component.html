@@ -1,0 +1,54 @@
+
+  
+      <!-- ========================= slider-section start ========================= -->
+
+
+      
+
+
+
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="assets/slider-default.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <div class="col-xl-7 col-lg-8 col-md-10 reform">
+                <h1>Bievenidos a MEDIC</h1>
+                  <p class="text-light">Empresa con 10 años en el sector salud brindando los mejores servicios con profesionales especializados...</p>
+                  <a href="#about" class="btn theme-btn page-scroll mt-4" >Learn More</a>
+                </div>
+              </div>
+            </div>
+              <div class="carousel-item" *ngFor="let filaDataBanner of listDataBanner">
+                <img src="https://zisoftacademy.com/apiclases/img/{{filaDataBanner.imagen}}" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <div class="col-xl-7 col-lg-8 col-md-10 reform">
+                  <h1>{{filaDataBanner.title}}</h1>
+                  <p class="text-light">{{filaDataBanner.description}}</p>
+                  <a href="#" class="btn theme-btn page-scroll mt-4" >{{filaDataBanner.botoom}}</a>
+                </div>
+                </div>
+              </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    
+
+
+      <section class="slider-section">
+        <div class="slider-active slick-style">
+
+
+       
+
+        </div>
+      </section>
+      <!-- ========================= slider-section end ========================= -->
